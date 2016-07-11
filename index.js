@@ -48,7 +48,6 @@ exports.handler = (event, context, callback) => {
                 }
             }
 
-            console.log('past the while');
             //
             // Find the highest position of list so that we can put them higher
             //
