@@ -1,0 +1,22 @@
+service: xd-trello-weekmenu
+
+provider:
+  name: aws
+  profile: serverless-personal
+  region: eu-west-1
+  stage: prod
+  runtime: nodejs4.3
+  memorySize: 128
+  timeout: 10
+  versionFunctions: false
+
+functions:
+  main:
+    description: Rearranges the lists of a Trello board so that the current day comes first & resets the board on Saturday.
+    handler: handler.hello
+    environment:
+      TRELLO_BOARD_ID: ${file(./config.yml):TRELLO_BOARD_ID}
+      TRELLO_API_TOKEN: ${file(./config.yml):TRELLO_API_TOKEN}
+      TRELLO_API_KEY: ${file(./config.yml):TRELLO_API_KEY}
+    events:
+      - schedule: cron(5 0 * * ? *) # Run it every day at 00:05 GMT
