@@ -1,18 +1,11 @@
 {
-  "name": "trello-weekmenu-lambda-orderLists",
-  "version": "0.0.1",
+  "name": "trello-weekmenu-lambda",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
   "author": "Xavier Decuyper",
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.3.17",
-    "node-lambda": "0.1.5",
     "request": "^2.72.0"
-  },
-  "scripts": {
-    "setup": "node-lambda setup",
-    "run": "node-lambda run",
-    "deploy": "node-lambda deploy"
   }
 }
