@@ -1,7 +1,7 @@
 # Meal planner with Trello and AWS Lambda
 This is the source code for my weekly meal planner (built on Trello and AWS Lambda).
 
-Read more about it on my blog: [https://www.savjee.be/2016/07/meal-planning-with-trello-and-aws-lambda/](https://www.savjee.be/2016/07/meal-planning-with-trello-and-aws-lambda/)
+Read more about it on my blog: [https://www.savjee.be/2016/07/Meal-planning-with-trello-and-aws-lambda/](https://www.savjee.be/2016/07/Meal-planning-with-trello-and-aws-lambda/)
 
 It's currently using the [Serverless framework](https://serverless.com/) to set up and create the resources on AWS.
 
